@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  proxy-app:
+    build: .
+    ports:
+      - "8060:8060"
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - JAVA_OPTS=-Xmx512m -Xms256m
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:
+    driver: bridge

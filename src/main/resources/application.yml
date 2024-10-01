@@ -1,0 +1,10 @@
+server:
+  port: 8060
+
+spring:
+  application:
+    name: proxy
+
+nexus:
+  base:
+    url: http://your-nexus-url
