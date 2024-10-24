@@ -25,7 +25,7 @@ public class ProxyService {
 
     private final WebClient webClient;
 
-    private static final Set<String> notCopiedHeader = Set.of("Connection", "Host");
+    private static final Set<String> notCopiedHeader = Set.of("Host");
 
     public Mono<byte[]> downloadPom(ServerWebExchange serverWebExchange, UUID requestID) throws IOException {
         String path = serverWebExchange.getRequest().getPath().pathWithinApplication().value();
