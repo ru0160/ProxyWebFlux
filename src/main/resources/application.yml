@@ -4,7 +4,11 @@ server:
 spring:
   application:
     name: proxy
+  codec:
+    max-in-memory-size: 50MB
 
 nexus:
   base:
-    url: http://your-nexus-url
+    url:
+  username:
+  password:

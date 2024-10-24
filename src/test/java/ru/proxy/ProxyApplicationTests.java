@@ -1,4 +1,4 @@
-package ru.proxy.proxy;
+package ru.proxy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
