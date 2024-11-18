@@ -7,7 +7,7 @@ services:
       - "8060:8060"
     environment:
       - SPRING_PROFILES_ACTIVE=default
-      - JAVA_OPTS=-Xmx512m -Xms256m
+      - JAVA_OPTS=-Xmx1024m -Xms1024m
     deploy:
       resources:
         limits:

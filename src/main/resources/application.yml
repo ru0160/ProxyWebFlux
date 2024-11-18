@@ -1,11 +1,16 @@
 server:
   port: 8060
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password:
+    key-store-type: PKCS12
+    key-alias:
 
 spring:
   application:
     name: proxy
   codec:
-    max-in-memory-size: 50MB
+    max-in-memory-size: 500MB
 
 nexus:
   base:
